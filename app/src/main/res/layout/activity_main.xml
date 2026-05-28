@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="?attr/colorBackground"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +14,7 @@
         android:padding="8dp"
         android:text="@string/no_file_selected"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorOnBackground" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/selectButton"
@@ -30,8 +28,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_weight="1"
-        android:background="?attr/colorSurface"
-        android:padding="12dp">
+        android:padding="12dp"
+        android:background="@color/surface">
 
         <TextView
             android:id="@+id/contentTextView"
@@ -39,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_file_hint"
             android:textSize="16sp"
-            android:textColor="?attr/colorOnSurface" />
+            android:textColor="@color/onSurface" />
     </ScrollView>
 
 </LinearLayout>
